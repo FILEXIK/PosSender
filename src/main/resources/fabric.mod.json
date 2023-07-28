@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "pos_sender",
+  "version": "${version}",
+  "name": "PosSender",
+  "description": "This mod will allow you to post your position in chat with one click",
+  "authors": [
+    "FILEXIK"
+  ],
+  "contact": {
+    "repo": "https://github.com/acer/PosSender"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/pos_sender/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.filexstudios.mc.pos_sender.client.PosSenderClient"
+    ],
+    "main": [
+      "com.filexstudios.mc.pos_sender.PosSender"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
