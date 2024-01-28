@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "pos-sender",
+  "version": "${version}",
+  "name": "PosSender",
+  "description": "Send position on chat!",
+  "authors": ["FILEXIK"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/pos_sender/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.filexstudios.mc.pos_sender.client.PosSenderClient"
+    ],
+    "main": [
+      "com.filexstudios.mc.pos_sender.PosSender"
+    ],
+    "modmenu": [
+      "com.filexstudios.mc.pos_sender.integration.ModMenu"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/jEGF5fb"
+      },
+      "parent": {
+        "id": "pos-sender",
+        "name": "PosSender",
+        "description": "Send position on chat!",
+        "icon": "assets/pos_sender/icon.png"
+      },
+      "update_checker": true
+    }
+  }
+}
