@@ -21,12 +21,12 @@ public class PosSender implements ModInitializer {
                 GLFW.GLFW_KEY_Y,
                 "Pos Sender"
         ));
-        registerLanguage("en_us");
-        registerLanguage("pl_pl");
+        //registerLanguage("en_us");
+        //registerLanguage("pl_pl");
     }
 
 
-    private void registerLanguage(String languageCode) {
+    /*private void registerLanguage(String languageCode) {
         ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES).registerReloadListener(
                 new SimpleSynchronousResourceReloadListener() {
                     @Override
@@ -39,4 +39,5 @@ public class PosSender implements ModInitializer {
                     }
                 });
     }
+     */
 }

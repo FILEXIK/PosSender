@@ -54,6 +54,8 @@ public class PosSenderClient implements ClientModInitializer {
         int posZ = (int) Math.round(client.player.getZ());
         String message = String.format("%s/%s/%s/%s", posX, posY, posZ, dimension);
         client.player.networkHandler.sendChatMessage(message);
+
+        
     }
 
 
